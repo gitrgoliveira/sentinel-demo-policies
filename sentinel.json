@@ -1,0 +1,8 @@
+{
+  "mock": {
+    "tfconfig": "mocks/mock-tfconfig.sentinel",
+    "tfplan": "mocks/mock-tfplan.sentinel",
+    "tfstate": "mocks/mock-tfstate.sentinel",
+    "tfrun": "mocks/mock-tfrun.sentinel"
+  }
+}
