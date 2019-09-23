@@ -3,5 +3,5 @@
 # in Terraform Cloud: hard-mandatory, soft-mandatory, and advisory.
 
 policy "tags_enforced" {
-    enforcement_level = "hard-mandatory"
+    enforcement_level = "advisory"
 }
