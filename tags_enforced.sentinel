@@ -6,8 +6,7 @@ import "tfplan"
 main = rule {
     all tfplan.resources.aws_instance as _, instances {
         all instances as _, r {
-            if r.applied.tags is not null { 
-                length(r.applied.tags > 1
+                (r.applied.tags is not null)
             }
         }
     }
