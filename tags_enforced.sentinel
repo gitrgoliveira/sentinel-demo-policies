@@ -1,4 +1,4 @@
-# searches for all aws_instance resources within the tfplan import.
+# Searches for all aws_instance resources within the tfplan import.
 # Any matching instances are then scanned for the tags attribute.
 
 import "tfplan"
