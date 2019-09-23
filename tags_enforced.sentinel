@@ -1,0 +1,12 @@
+# searches for all aws_instance resources within the tfplan import.
+# Any matching instances are then scanned for the tags attribute.
+
+import "tfplan"
+
+main = rule {
+    all tfplan.resources.aws_instance as _, instances {
+        all instances as _, r {
+            (length(r.applied.tags) else 0) > 0
+        }
+    }
+}
