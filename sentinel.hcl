@@ -1,4 +1,4 @@
-# defining the enforcement level
+# Defining the enforcement level
 # There are three levels of enforcement associated with policies
 # in Terraform Cloud: hard-mandatory, soft-mandatory, and advisory.
 
