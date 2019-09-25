@@ -3,9 +3,9 @@
 # in Terraform Cloud: hard-mandatory, soft-mandatory, and advisory.
 
 policy "tags_enforced" {
-    enforcement_level = "soft-mandatory"
+    enforcement_level = "hard-mandatory"
 }
 
 policy "restrict-ec2-instance-type" {
-    enforcement_level = "soft-mandatory"
+    enforcement_level = "hard-mandatory"
 }
