@@ -7,5 +7,5 @@ policy "tags_enforced" {
 }
 
 policy "restrict-ec2-instance-type" {
-    enforcement_level = "hard-mandatory"
+    enforcement_level = "soft-mandatory"
 }
