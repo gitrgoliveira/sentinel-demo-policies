@@ -4,9 +4,11 @@
 import "tfplan"
 
 main = rule {
-    all tfplan.resources.aws_instance as _, instances {
-        all instances as _, r {
-            (r.applied.tags is not null)
+    if tfplan.resources is not null {
+        all tfplan.resources.aws_instance as _, instances {
+            all instances as _, r {
+                (r.applied.tags is not null and length(r.applied.tags) else 0 ) > 0
+            }
         }
     }
 }
