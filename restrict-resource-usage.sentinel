@@ -46,10 +46,8 @@ validate_resources = func(blacklist) {
     found_resources = find_resources_from_plan(type)
 
     for found_resources as address, r {
-      if length(r.diff) > 0  {
-        print("Blacklisted resource", address, "is being created or modified")
-        valid = false
-      }
+      print("Blacklisted resource", address, "was found")
+      valid = false
     }
   }
   return valid
