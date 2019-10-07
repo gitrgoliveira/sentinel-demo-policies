@@ -55,7 +55,7 @@ validate_resources = func(blacklist) {
   return valid
 }
 
-# Allowed Types
+# Blacklisted types
 blacklist = [
   "aws_vpc",
 ]
