@@ -17,3 +17,7 @@ policy "restrict-ingress-sg-rule-cidr-blocks" {
 policy "restrict-resource-usage" {
     enforcement_level = "hard-mandatory"
 }
+
+policy "force-db-backup" {
+    enforcement_level = "soft-mandatory"
+}
