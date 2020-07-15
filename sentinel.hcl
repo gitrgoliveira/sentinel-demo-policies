@@ -3,7 +3,7 @@
 # in Terraform Cloud: hard-mandatory, soft-mandatory, and advisory.
 
 policy "enforce-mandatory-tags" {
-    enforcement_level = "hard-mandatory"
+    enforcement_level = "soft-mandatory"
 }
 
 policy "restrict-ec2-instance-type" {
@@ -15,7 +15,7 @@ policy "restrict-ingress-sg-rule-cidr-blocks" {
 }
 
 policy "restrict-resource-usage" {
-    enforcement_level = "hard-mandatory"
+    enforcement_level = "soft-mandatory"
 }
 
 policy "restrict-cost-and-percentage-increase" {
